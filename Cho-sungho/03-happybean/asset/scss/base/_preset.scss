@@ -1,0 +1,28 @@
+.blind, input{
+    position: absolute;   
+    width: 1px;height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+}
+
+img{
+    width: 100%;height: 100%;
+    object-fit: cover;}
+
+.inner{
+    padding: 0 15px;
+}
+
+.sc_visual .visual_title,
+.sc_visual .visual_msg,
+.sc_visual .group_goal .goal,
+.info_tab_area .info_list,
+.info_cont .cont_wrap .cont_title,
+.info_cont .cont_wrap .cont,
+.sc_donate,
+.donate_tab_area .donate_tab
+.donate_cont_area .donate_price_wrap .btn_select
+{
+    letter-spacing: -0.06rem;
+}

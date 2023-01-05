@@ -1,0 +1,51 @@
+header{
+    width: 100%;
+    background-color: #fff;
+}
+.logo_area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;height: 44px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #f4f4f4;
+    .link_naver{
+        display: block;
+        width: 17px;height: 17px;
+        padding: 0 15px;
+    }
+    .logo_bean{
+        width: 60px;height: 20px;
+        a{
+            display: block;
+            height: 100%;
+        }
+    }
+    .link_mypage{
+        display: block;
+        width: 27px;height: 14px;
+        padding: 0 15px;
+    }
+}
+.gnb_area{
+    background-color: #fff;
+    .gnb_list{
+        display: table;
+        width: 100%;height: 46px;
+        font-size: 14px;
+        text-align: center;
+        .gnb_item{
+            display: table-cell;
+            height: 100%;
+        }
+        .gnb_tab{
+            display: block;
+            padding: 0 13px 0 17px;
+            line-height: 44px;
+            &.is_selected{
+                color: #89b63f;
+                border-bottom: 2px solid #89b63f;
+            }
+        }
+    }
+}

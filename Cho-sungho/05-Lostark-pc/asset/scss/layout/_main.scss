@@ -1,0 +1,332 @@
+main{
+    padding: 45px 0 139px;
+    margin-left: 180px;
+}
+.logo{
+    width: 315px;height: 78px;
+    padding: 10px;
+    margin: 0 auto;
+}
+.section_join{
+    min-width: 800px;
+    width: 800px;
+    margin: 30px auto 0;
+    .join_area01{
+        margin-top: 50px; 
+    }
+    .join_area02{
+        margin-top: 7px;
+    }
+}
+.join_list{
+    display: flex;
+    align-items: center;
+    width: 100%;height: 122px;
+    background: url(../images/bg_join.png) no-repeat center/cover;
+    &02{
+        background: url(../images/bg_join02.png) no-repeat center/cover;
+        button{
+            p{
+                &.input{
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .join_item{
+        width: calc(100%/4);
+        text-align: center;
+    }
+    button{
+        span{
+            font-size: 15px;
+            color: #9898d9;
+        }
+        p{
+            margin-top: 7px;
+            font-size: 18px;
+            color: #9898db;
+            &.agree{
+                color: #fff;
+            }
+        }
+        .icon{
+            display: inline-block;
+            width: 36px;height: 36px;
+            margin-top: 13px;
+            &_agree{
+                background: url(../images/icon01.png) no-repeat center/100%;
+            }
+            &_input{
+                background: url(../images/icon02.png) no-repeat center/25px 100% ;
+            }
+            &_mail{
+                background: url(../images/icon03.png) no-repeat center/29px 35px;
+            }
+            &_success{
+                background: url(../images/icon04.png) no-repeat center/100%;
+            }
+        }
+    }
+}
+.join_area{
+    width: 100%;
+    padding: 36px 94px;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    letter-spacing: 0.02rem ;
+    &03{
+        width: 100%;        
+        margin-top: 38px;
+        padding: 0;
+        background-color: transparent;
+    }
+    .title{
+        font-size: 24px;
+    }
+    .desc_wrap{
+        width: 100%;height: 170px;
+        max-height: 170px;
+        padding: 20px;
+        margin-top: 19px;
+        overflow: auto;
+        background-color: #2f2e31;
+        box-sizing: border-box;
+        p{
+            font-size: 11px;
+            line-height: 20px;
+            color: #dedede;
+            strong{
+                display: block;
+                font-size: 12px;
+                color: #fff;
+            }
+        }
+        ul{
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #444346;
+            margin-bottom: 20px;
+            li{
+                width: calc(100%/3);
+                height: 35px;
+                text-align: center;
+            }
+            button{
+                font-size: 12px;
+                color: #fff;
+            }
+        }
+    }
+    .check_list{
+        display: flex;
+        justify-content: space-between;
+        &:last-child{
+            margin-right: 53px;
+        }
+        .check_item{
+            &.is_selected{
+                label{
+                    color: #8995ff;
+                    &::before{
+                        background: url(../images/agree_checked.png) no-repeat center/cover;
+                    }
+                }
+            }
+            margin-top: 10px;
+            font-size: 12px;
+            color: #999;
+            label{
+                &::before{
+                    content: '';
+                    display: inline-block;
+                    width: 25px;height: 25px;
+                    vertical-align: -8px;
+                    margin-right: 5px;
+                    background: url(../images/agree.png) no-repeat center/cover;
+                }
+            }
+        }
+        
+    }
+}
+
+.link_next{
+    display: block;
+    width: 215px;height: 60px;
+    margin: 30px auto 0;
+    line-height: 60px;
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+    background-color: #303061;
+}
+
+.link_area{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    .link_new{
+        display: block;
+        width: 215px;height: 60px;
+        margin-right: 12px;
+        line-height: 60px;
+        text-align: center;
+        font-size: 15px;
+        color: #8995ff;
+        border: 2px solid #646dc0;
+        box-sizing: border-box;
+    }
+    .link_next{
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+    }
+
+}
+
+.input_wrap{
+    padding: 50px 98px 50px 100px ;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 15px;
+    ul{ 
+        .input_item{
+            display: flex;
+            &+.input_item{
+                margin-top: 26px;
+            }
+            .label_main{
+                width: 93px;
+                height: 50px;
+                line-height: 50px;
+                margin-right: 32px;
+                color: #8995ff;
+                letter-spacing: -0.075rem;
+            }
+            &_mail{
+                .text_input{
+                    .text_wrap{
+                        &.is_correct{
+                            border-color: #8995ff;
+                            border-width: 2px;
+                        }
+                    }
+                }
+                .icon_check{
+                    &.is_correct{
+                        background: url(../images/icon05_checked.png) no-repeat center/cover;
+                    }
+                }
+                .input_msg{
+                    &.is_correct{
+                        color: #8995ff;
+                    }
+                }
+            }
+            &_nick{
+                .text_input{
+                    .text_wrap{
+                        &.is_uncorrect{
+                            border-color: #f00;
+                            border-width: 2px;
+                        }
+                    }
+                }
+                .input_msg{
+                    &.is_uncorrect{
+                        color: #f00;
+                    }
+                }
+            }
+        } 
+    }
+    .group_input{ 
+        display: flex;flex-direction: column;
+        flex: 1;
+        font-size: 11px;
+        color: #999;
+        .text_input{
+            position: relative;
+            width: 100%;height: 50px;
+        }
+        .icon_check{
+            position: absolute;
+            top: 50%;right: 21px;
+            display: inline-block;
+            width: 19px;height: 14px;
+            background: url(../images/icon05.png) no-repeat center/cover;
+            transform: translateY(-50%);
+        }
+        .input_msg{
+            display: inline-block;
+            margin-top: 11px;
+        }
+        .check_input{
+            height: 24px;
+            line-height: 24px;
+            margin-top: 21px; 
+            label{
+                &::before{
+                    content: '';
+                    display: inline-block;
+                    width: 24px;height: 24px;
+                    margin-right: 8px;
+                    vertical-align: -7px;
+                     background: url(../images/icon06.png) no-repeat center/cover;
+                }
+            }
+            &.is_selected{
+                label{
+                    color: #8995ff;
+                    &::before{
+                        background: url(../images/icon06_checked.png) no-repeat center/cover;
+                    }
+                }
+            }
+        }
+    }
+    .text_wrap{
+        position: relative;
+        display: block;
+        width: 100%;height: 100%;
+        padding: 0 20px;
+        background-color: #fff;
+        border: 2px solid #8b8b8b;
+        box-sizing: border-box;
+        &::after{
+            content: '';
+            position: absolute;
+            top: 50%;left: 50%;
+            display: inline-block;
+            width: 14px;height: 19px;
+        }
+        &:invalid{
+            // border-color: #f00;
+            // border-width: 2px;
+        }
+        &.on{
+            &::placeholder{
+                color: #fff;
+            }
+        }
+    }
+    .icon_check{
+        position: absolute;
+        top: 0;right: 0;
+        display: inline-block;
+        width: 19px;height: 14px;
+        background-color: #f00;
+    }
+}
+.click_area{
+    position: fixed;
+    right: 100px;bottom: 50px;
+    z-index: 999;
+    display: flex;
+    justify-content: flex-end;
+    .btn_click{
+        width: 150px;height: 70px;
+        background-color: rgba(48, 48, 97, 0.8);
+        border-radius: 50px;
+    }
+}

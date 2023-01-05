@@ -1,0 +1,125 @@
+body{
+    color: #333;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+.title{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px 0;
+}
+.content{
+    margin-top: 20px;
+    line-height: 1.5;
+}
+.box_area{
+    width: 100%;
+    margin: 50px 0;
+    box-sizing: border-box;
+    .colorscripter-code{
+        margin-top: 20px;
+    }
+}
+.sub_title{
+    font-size: 20px;
+}
+
+.box_wrap{
+    background-color: #ccc;
+    margin-top: 10px;
+    width: 100%;height: 100px;
+    .box{
+        height: 100%;
+        &01{background-color: #cc9;}
+        &02{background-color: #cd9;}
+        &03{background-color: #cdc;}
+    }
+    &01{
+        // overflow: hidden;
+        &::after{
+            content: '';
+            display: block;clear: both;
+        }
+        .box{
+            float: left;height: 100%;
+            &01{
+                width: 100px;
+            }
+            &02{
+                width: calc(100% - 200px);
+            }
+            &03{
+                width: 100px;
+            }
+        }
+    }
+    &02{
+        display: flex;justify-content: space-between;
+        .box{
+            &01{
+                width: 100px;
+            }
+            &02{
+                flex: 1;
+            }
+            &03{
+                width: 100px;
+            }
+        }
+    }
+    &03{
+        display: grid;
+        grid-template-columns: 100px auto 100px;
+    }
+    &04{
+        display: table;
+        .box{
+            display: table-cell;
+            &01{
+                width: 100px;
+            }
+            &03{
+                width: 100px;
+            }
+        }
+    }
+    &05{
+        position: relative;
+        .box{
+            position: absolute;
+            top: 0;
+            height: 100%;
+            &01{
+                left: 0;
+                width: 100px;
+            }
+            &02{
+                left: 100px;
+                width: calc(100% - 200px);
+            }
+            &03{
+                right: 0;
+                width: 100px;
+            }
+        }
+    }
+    &06{
+        font-size: 0;
+        .box{
+            display: inline-block;
+            height: 100%;
+            &01{
+                width: 100px;
+            }
+            &02{
+                width: calc(100% - 200px);
+                // margin: 0 -6px;
+            }
+            &03{
+                width: 100px;
+            }
+        }
+    }
+}

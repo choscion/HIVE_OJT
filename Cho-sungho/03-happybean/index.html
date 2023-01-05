@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./asset/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo_area">
+            <a href="#" class="link_naver"><img src="./asset/images/logo_naver.png" alt="네이버로고"></a>
+            <h1 class="logo_bean">
+                <a href="#"><img src="./asset/images/logo_bean.png" alt="해피빈로고"></a>
+            </h1>
+            <a href="#" class="link_mypage"><img src="./asset/images/logo_my.png" alt="마이페이지"></a>
+        </div>
+    </header>
+    <nav class="gnb_area">
+        <ul class="gnb_list">
+            <li class="gnb_item" role="none"><a href="#" class="gnb_tab is_selected">홈</a></li>
+            <li class="gnb_item" role="none"><a href="#" class="gnb_tab">기부</a></li>
+            <li class="gnb_item" role="none"><a href="#" class="gnb_tab">펀딩</a></li>
+            <li class="gnb_item" role="none"><a href="#" class="gnb_tab">정기저금</a></li>
+            <li class="gnb_item" role="none"><a href="#" class="gnb_tab">캠페인</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="sc_visual">
+            <h2 class="blind">멸종위기관련 비주얼 영역</h2>
+            <div class="bg_area">
+                <img src="./asset/images/bg_visual.jpg" alt="멸종위기 영역 배경 사진">
+            </div>
+            <div class="inner">
+                <h3 class="visual_title">멸종위기종보호</h3>
+                <p class="visual_msg">평생 잊을 수 없는 공포에 놓인<br> 로힝햐 아이들</p>
+                <span class="brand">
+                    <span class="new_badge"><img src="./asset/images/visual_badge01.png" alt="새로운 브랜드 뱃지"></span>
+                    세이브더칠드런
+                    <button class="info_badge" type="button"><span class="blind">브랜드 정보</span></button>
+                </span>
+                <div class="group_goal">
+                    <span class="goal">9,900,000원 목표</span>
+                    <div class="bar_wrap">
+                        <!-- [D] .colorbar width 값으로 조절됩니다. -->
+                        <span class="colorbar" style="width:70%"><span class="blind">목표량 색상바</span></span>
+                    </div>
+                    <div class="goal_wrap">
+                        <em class="sum"><span class="blind">모금액</span><span class="sum_price">2,611,700</span>원</em>
+                        <span class="percent_goal"><span class="blind">목표율</span>70%</span>
+                        <span class="dday"><span class="blind">남은 날짜</span>124<span class="dday_left">일 남음</span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sc_info">
+            <h2 class="blind">모금관련 내용 영역</h2>
+            <div class="info_tab_area">
+                <div class="inner">
+                    <ul class="info_list">
+                        <li class="info_item" role="none"><a href="#" class="info_tab is_selected" data-tablist="#tabpanel01">모금소개</a></li>
+                        <li class="info_item" role="none"><a href="#" class="info_tab" data-tablist="#tabpanel02">모금소식</a></li>
+                        <li class="info_item" role="none"><a href="#" class="info_tab" data-tablist="#tabpanel03">최종후기</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="info_cont_area">
+                <div class="inner">
+                    <div class="info_cont is_selected" id="tabpanel01">
+                        <div class="image_wrap"><img src="./asset/images/info01.jpg" alt="제비 사진"></div>
+                        <div class="cont_wrap">
+                            <h3 class="cont_title">제비는 왜 돌아오지 않을까요?</h3>
+                            <p class="cont">
+                                혹시 서울에서 제비를 본 적이 있나요?
+                                봄이면 찾아와 처마 밑에 둥지를 짓고 새끼를 낳아 기르며 우리와 함께 했던 
+                                제비가 어느 순간 부터인가 그 모습을 찾기가 점점 어려워 졌습니다.
+                                서울시의 보호종이자 IUCN(세계자연 보전연맹) 
+                                관심 필요종이기도 한 제비는 현재 서울 에서는 일부 지역에서만
+                                관찰할 수 있습니다.
+                            </p>
+                            <h3 class="cont_title">제비가 사라져 가고 있어요</h3>
+                            <p class="cont">
+                                급격한 도시 개발로  인한 서식지 파괴, 둥지 재료의 감소, 먹이 부족등으로 
+                                점점 제비가 살아 가기 힘들어 지고 있습니다. 또한 이러한 현상은 비단 
+                                우리나라 에만 국한되지 않고 지구 온난화와 심각한 환경오염 으로 신음하는 
+                                지구 전체의 문제이기도 합니다. 전 세계를 비행하는 제비에게 있어서 
+                                급격한 서식 환 경의 변화는 생존의 위협 을 가하는 요인일 것입니다.
+                            </p>
+                        </div>
+                        <button class="btn_share" type="button" aria-label="공유하기 버튼"></button>
+                    </div>
+                    <div class="info_cont" id="tabpanel02">내용없음.</div>
+                    <div class="info_cont" id="tabpanel03">내용없음.</div>
+                </div>
+            </div>
+        </section>
+        <section class="sc_donate">
+            <h2 class="blind">기부관련 영역</h2>
+            <div class="donate_tab_area">
+                <button class="donate_tab is_selected" type="button" data-tablist2="#payDonate">결제기부</button>
+                <button class="donate_tab" type="button" data-tablist2="#amountDonate">보유금액기부</button>
+            </div>
+            <div class="donate_cont_area donate_cont_area_pay is_selected" id="payDonate">
+                <form action="">
+                    <fieldset>
+                        <div class="inner">
+                            <legend><span class="blind">결제기부</span></legend>
+                            <ul class="donate_method_list">
+                                <li class="method_item method_item01 is_selected" role="none">
+                                    <input type="radio" id="once" name="donate" value="1회 기부">
+                                    <label for="once">1회 기부</label>
+                                </li>
+                                <li class="method_item method_item02" role="none">
+                                    <input type="radio" id="twice" name="donate" value="매월 정기기부">
+                                    <label for="twice">매월 정기기부
+                                        <em class="date"><span class="color">2018.1</span>(다음 결제일 :<span class="next_date">2018.02.05</span>)</em>
+                                    </label>
+                                </li>
+                            </ul>
+                            <div class="donate_price_wrap">
+                                <!-- <button class="btn_select">10,000</button>
+                                <ul class="select_list">
+                                    <li class="select_item" role="none"><button class="select_tab">10,000</button></li>
+                                    <li class="select_item" role="none"><button class="select_tab">20,000</button></li>
+                                    <li class="select_item" role="none"><button class="select_tab">30,000</button></li>
+                                    <li class="select_item" role="none"><button class="select_tab">40,000</button></li>
+                                    <li class="select_item" role="none"><button class="select_tab">50,000</button></li>
+                                </ul> -->
+                                <select name="donation_price">
+                                    <option value="10000">10,000</option>
+                                    <option value="20000">20,000</option>
+                                    <option value="30000">30,000</option>
+                                    <option value="40000">40,000</option>
+                                    <option value="50000">50,000</option>
+                                </select>
+                            </div>
+                            <div class="etc_wrap">
+                                <input type="checkbox" id="btnAgree">
+                                <label for="btnAgree" class="btn_agree">
+                                    <span class="icon_check"><span class="blind">체크아이콘</span></span>
+                                    유료이용약관동의
+                                </label>
+                                <a href="#" class="btn_detail">
+                                    내용보기
+                                    <span class="icon_arrow"><span class="blind">아이콘</span></span>
+                                </a>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="price_area">
+                        <strong class="total_price">총 기부액 <span class="color">10,000</span>원</strong>
+                    </div>
+                    <button class="btn_donate" type="button">기부하기</button>
+                </form>
+            </div>
+            <div class="donate_cont_area donate_cont_area_amount" id="amountDonate">내용없음.</div>
+        </section>
+        <section class="sc_collection">
+            <h2 class="blind">모금함 상세 정보 및 관련사진 영역</h2>
+            <div class="coll_area">
+                <button class="btn_coll">
+                    모금함 상세 정보
+                    <span class="arrow_down"><span class="blind">펼치기</span></span>
+                </button>
+                <div class="coll_detail">
+                    <h3 class="coll_title">기부금 사용계획</h3>
+                    <ul class="detail_list">
+                        <li class="detail_item" role="none">
+                            <em>생계비</em>
+                            <strong><span class="color">4,900,000</span>원</strong>
+                        </li>
+                        <li class="detail_item" role="none">
+                            <em>주거비</em>
+                            <strong><span class="color">5,000,000</span>원</strong>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pic_area slide01">
+                <h3 class="pic_title">관련 사진</h3>
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide" role="none">
+                        <a href="#" class="btn_pic"><img src="./asset/images/pic01.jpg" alt="기부관련 사진01"></a>
+                    </li>
+                    <li class="swiper-slide" role="none">
+                        <a href="#" class="btn_pic"><img src="./asset/images/pic02.jpg" alt="기부관련 사진02"></a>
+                    </li>
+                    <li class="swiper-slide" role="none">
+                        <a href="#" class="btn_pic"><img src="./asset/images/pic01.jpg" alt="기부관련 사진03"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="etc_area">
+                <a href="#" class="btn_list">
+                    <span class="icon_list"><span class="blind">리스트 아이콘</span></span>
+                    기부내역
+                </a>
+                <a href="#" class="btn_comment">
+                    <span class="icon_comment"><span class="blind">댓글 아이콘</span></span>
+                    응원댓글
+                    <em class="count">5</em>
+                </a>
+            </div>
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./asset/js/main.js"></script>
+</body>
+</html>

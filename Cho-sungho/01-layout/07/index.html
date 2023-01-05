@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step07</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h1 class="title">Step07</h1>
+    <div class="box_area">
+        <h2 class="sub_title">float</h2>
+        <div class="box_wrap box_wrap01">
+            <div class="box box01">1</div>
+            <div class="box box02">2</div>
+            <div class="box box03">3</div>
+        </div>
+        <div class="box_wrap box_wrap01">
+            <div class="box box01">1</div>
+            <div class="box box02">2</div>
+        </div>
+        <div class="box_wrap box_wrap01">
+            <div class="box box01">1</div>
+        </div>
+        <p class="content">
+            float의 경우 width값을 자동적으로 부여할 수 없다
+        </p>
+    </div>
+    <div class="box_area">
+        <h2 class="sub_title">flex</h2>
+        <div class="box_wrap box_wrap02">
+            <div class="box box01">1</div>
+            <div class="box box02">2</div>
+            <div class="box box03">3</div>
+        </div>
+        <div class="box_wrap box_wrap02">
+            <div class="box box01">1</div>
+            <div class="box box02">2</div>
+        </div>
+        <div class="box_wrap box_wrap02">
+            <div class="box box01">1</div>
+        </div>
+        <div class="colorscripter-code" style="color:#010101;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position:relative !important;overflow:auto"><table class="colorscripter-code-table" style="margin:0;padding:0;border:none;background-color:#fafafa;border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px;border-right:2px solid #e5e5e5"><div style="margin:0;padding:0;word-break:normal;text-align:right;color:#666;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="line-height:130%">1</div><div style="line-height:130%">2</div><div style="line-height:130%">3</div><div style="line-height:130%">4</div><div style="line-height:130%">5</div><div style="line-height:130%">6</div><div style="line-height:130%">7</div><div style="line-height:130%">8</div></div></td><td style="padding:6px 0;text-align:left"><div style="margin:0;padding:0;color:#010101;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#ff3399">//&nbsp;scss</span></div><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#ff3399">.box_wrap02</span></div><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#ff3399"></span>{<span style="color:#0099cc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display</span><span style="color:#ff3399">:</span><span style="color:#0066cc">&nbsp;flex</span><span style="color:#ff3399">;</span><span style="color:#0099cc">justify-content</span><span style="color:#ff3399">:</span><span style="color:#0066cc">&nbsp;space-between</span><span style="color:#ff3399">;</span><span style="color:#ff3399"></span></div><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#ff3399">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.box</span>{<span style="color:#0099cc"></span></div><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#0099cc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;flex</span><span style="color:#ff3399">:</span><span style="color:#0066cc">&nbsp;1</span><span style="color:#ff3399">;</span><span style="color:#ff3399"></span></div><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#ff3399">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;+.box</span>{<span style="color:#0099cc">margin-left</span><span style="color:#ff3399">:</span><span style="color:#0066cc">&nbsp;10px</span><span style="color:#ff3399">;</span><span style="color:#0066cc"></span>}<span style="color:#0066cc"></span></div><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#0066cc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>}<span style="color:#0066cc"></span></div><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#0066cc">&nbsp;&nbsp;&nbsp;&nbsp;</span>}</div></div><div style="text-align:right;margin-top:-13px;margin-right:5px;font-size:9px;font-style:italic"><a href="http://colorscripter.com/info#e" target="_blank" style="color:#e5e5e5text-decoration:none">Colored by Color Scripter</a></div></td><td style="vertical-align:bottom;padding:0 2px 4px 0"><a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration:none;color:white"><span style="font-size:9px;word-break:normal;background-color:#e5e5e5;color:white;border-radius:10px;padding:1px">cs</span></a></td></tr></table></div>
+        <p class="content">
+            flex:1을 활용하면<br>
+            갯수를 줄여도 자동적으로 width값이 조정할 수 있다.
+        </p>
+    </div>
+    <div class="box_area">
+        <h2 class="sub_title">grid</h2>
+        <div class="box_wrap box_wrap03">
+            <div class="box box01">1</div>
+            <div class="box box02">2</div>
+            <div class="box box03">3</div>
+        </div>
+        <div class="box_wrap box_wrap03">
+            <div class="box box01">1</div>
+            <div class="box box02">2</div>
+        </div>
+        <div class="box_wrap box_wrap03">
+            <div class="box box01">1</div>
+        </div>
+        <div class="colorscripter-code" style="color:#010101;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position:relative !important;overflow:auto"><table class="colorscripter-code-table" style="margin:0;padding:0;border:none;background-color:#fafafa;border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px;border-right:2px solid #e5e5e5"><div style="margin:0;padding:0;word-break:normal;text-align:right;color:#666;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="line-height:130%">1</div><div style="line-height:130%">2</div><div style="line-height:130%">3</div><div style="line-height:130%">4</div><div style="line-height:130%">5</div><div style="line-height:130%">6</div></div></td><td style="padding:6px 0;text-align:left"><div style="margin:0;padding:0;color:#010101;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#ff3399">//&nbsp;scss</span></div><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#ff3399">.box_wrap03</span>{<span style="color:#0099cc"></span></div><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#0099cc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display</span><span style="color:#ff3399">:</span><span style="color:#0066cc">&nbsp;grid</span><span style="color:#ff3399">;</span><span style="color:#0099cc"></span></div><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#0099cc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;grid-template-columns</span><span style="color:#ff3399">:</span><span style="color:#0066cc">&nbsp;repeat(auto-fit,&nbsp;minmax(1px,&nbsp;1fr))</span><span style="color:#ff3399">;</span><span style="color:#0099cc"></span></div><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#0099cc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gap</span><span style="color:#ff3399">:</span><span style="color:#0066cc">&nbsp;10px</span><span style="color:#ff3399">;</span><span style="color:#0066cc"></span></div><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#0066cc"></span>}</div></div><div style="text-align:right;margin-top:-13px;margin-right:5px;font-size:9px;font-style:italic"><a href="http://colorscripter.com/info#e" target="_blank" style="color:#e5e5e5text-decoration:none">Colored by Color Scripter</a></div></td><td style="vertical-align:bottom;padding:0 2px 4px 0"><a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration:none;color:white"><span style="font-size:9px;word-break:normal;background-color:#e5e5e5;color:white;border-radius:10px;padding:1px">cs</span></a></td></tr></table></div>
+        <p class="content">
+            grid의 경우 auto-fit을 사용해서 조건을 부합할 수 있다<br>
+            최소값과 최대값 수치를 정해줘야한다 <br>
+            IE11 호환 X
+        </p>
+    </div>
+    <div class="box_area">
+        <h2 class="sub_title">table</h2>
+        <div class="box_wrap box_wrap04">
+            <div class="box box01">1</div>
+            <div class="box box02">2</div>
+            <div class="box box03">3</div>
+        </div>
+        <div class="box_wrap box_wrap04">
+            <div class="box box01">1</div>
+            <div class="box box02">2</div>
+        </div>
+        <div class="box_wrap box_wrap04">
+            <div class="box box01">1</div>
+        </div>
+        <div class="colorscripter-code" style="color:#010101;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position:relative !important;overflow:auto"><table class="colorscripter-code-table" style="margin:0;padding:0;border:none;background-color:#fafafa;border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px;border-right:2px solid #e5e5e5"><div style="margin:0;padding:0;word-break:normal;text-align:right;color:#666;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="line-height:130%">1</div><div style="line-height:130%">2</div><div style="line-height:130%">3</div><div style="line-height:130%">4</div><div style="line-height:130%">5</div><div style="line-height:130%">6</div><div style="line-height:130%">7</div></div></td><td style="padding:6px 0;text-align:left"><div style="margin:0;padding:0;color:#010101;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#ff3399">//&nbsp;scss</span></div><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#ff3399">.box_wrap04</span>{<span style="color:#0099cc"></span></div><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#0099cc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display</span><span style="color:#ff3399">:</span><span style="color:#0066cc">&nbsp;table</span><span style="color:#ff3399">;</span><span style="color:#0099cc"></span></div><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#0099cc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;table-layout</span><span style="color:#ff3399">:</span><span style="color:#0066cc">&nbsp;fixed</span><span style="color:#ff3399">;</span><span style="color:#0099cc"></span></div><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#0099cc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;border-spacing</span><span style="color:#ff3399">:</span><span style="color:#0066cc">&nbsp;10px&nbsp;0</span><span style="color:#ff3399">;</span><span style="color:#ff3399"></span></div><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#ff3399">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.box</span>{<span style="color:#0099cc">display</span><span style="color:#ff3399">:</span><span style="color:#0066cc">&nbsp;table-cell</span><span style="color:#ff3399">;</span><span style="color:#0066cc"></span>}<span style="color:#0066cc"></span></div><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#0066cc"></span>}</div></div><div style="text-align:right;margin-top:-13px;margin-right:5px;font-size:9px;font-style:italic"><a href="http://colorscripter.com/info#e" target="_blank" style="color:#e5e5e5text-decoration:none">Colored by Color Scripter</a></div></td><td style="vertical-align:bottom;padding:0 2px 4px 0"><a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration:none;color:white"><span style="font-size:9px;word-break:normal;background-color:#e5e5e5;color:white;border-radius:10px;padding:1px">cs</span></a></td></tr></table></div>
+        <p class="content">
+            table의 경우 border-spacing을 사용해 여백을 줄 수 있지만<br>
+            필요한 부분에만 주는것이 아니고 모든영역에 동일한 여백을 주기때문에<br>
+            시안과 동일하게 구현하기엔 무리가 있다
+        </p>
+    </div>
+    <div class="box_area">
+        <h2 class="sub_title">position</h2>
+        <div class="box_wrap box_wrap05">
+            <div class="box box01">1</div>
+            <div class="box box02">2</div>
+            <div class="box box03">3</div>
+        </div>
+        <div class="box_wrap box_wrap05">
+            <div class="box box01">1</div>
+            <div class="box box02">2</div>
+        </div>
+        <div class="box_wrap box_wrap05">
+            <div class="box box01">1</div>
+        </div>
+        <p class="content">
+            position의 좌표값은 자동적으로 부여할 수가 없다<br>
+            구현할 수 없다
+        </p>
+    </div>
+    <div class="box_area">
+        <h2 class="sub_title">inline-block</h2>
+        <div class="box_wrap box_wrap06">
+            <div class="box box01">1</div>
+            <div class="box box02">2</div>
+            <div class="box box03">3</div>
+        </div>
+        <div class="box_wrap box_wrap06">
+            <div class="box box01">1</div>
+            <div class="box box02">2</div>
+        </div>
+        <div class="box_wrap box_wrap06">
+            <div class="box box01">1</div>
+        </div>
+        <p class="content">
+            inline block도 float와 마찬가지로<br>
+            width값을 자동으로 부여할 수 없다.
+        </p>
+    </div>
+</body>
+</html>

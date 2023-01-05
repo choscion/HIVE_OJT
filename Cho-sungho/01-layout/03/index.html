@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step03</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h1 class="title">Step03</h1>
+    <p class="content">
+        1.width:고정 / height:유동<br>
+        2.width:유동 / height:유동
+    </p>
+    <div class="box_area">
+        <h2 class="sub_title">float</h2>
+        <div class="box_wrap box_wrap01">
+            <div class="box box01">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+            </div>
+            <div class="box box02">2</div>
+        </div>
+        <p class="content">
+            float의 경우 컨텐츠의 양에 따른 높이는 개별적으로 늘어난다
+        </p>
+    </div>
+    <div class="box_area">
+        <h2 class="sub_title">flex</h2>
+        <div class="box_wrap box_wrap02">
+            <div class="box box01">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+                
+            </div>
+            <div class="box box02">2</div>
+        </div>
+        <p class="content">
+            flex의 특성상 함께 늘어난다.
+        </p>
+    </div>
+    <div class="box_area">
+        <h2 class="sub_title">grid</h2>
+        <div class="box_wrap box_wrap03">
+            <div class="box box01">
+                Lorem Ipsum is simply dummy text of the printing and 
+            </div>
+            <div class="box box02">2</div>
+        </div>
+        <p class="content">
+            flex와 마찬가지고 함께 늘어난다. <br>
+            IE11 호환 X
+        </p>
+    </div>
+    <div class="box_area">
+        <h2 class="sub_title">table</h2>
+        <div class="box_wrap box_wrap04">
+            <div class="box box01">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+                book. It has survived not only five centuries, but also the leap int
+            </div>
+            <div class="box box02">2</div>
+        </div>
+        <p class="content">
+            부모에 display:table, 자식에게 display:table-cell을 부여<br>
+            그 후 1번째 박스에 width값을 고정해준다.
+        </p>
+    </div>
+    <div class="box_area">
+        <h2 class="sub_title">position</h2>
+        <div class="box_wrap box_wrap05">
+            <div class="box box01">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+                book. It has survived not only five centuries, but also the leap int
+            </div>
+            <div class="box box02">2</div>
+        </div>
+        <p class="content_position">
+            position은 width값과 height값이 정해져야 공간으로 인식된다
+        </p>
+    </div>
+    <div class="box_area">
+        <h2 class="sub_title">inline-block</h2>
+        <div class="box_wrap box_wrap06">
+            <div class="box box01">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+                book. It has survived not only five centuries, but also the leap int
+            </div>
+            <div class="box box02">2</div>
+        </div>
+        <p class="content">
+            inline-block 정렬 시 2번째박스가 하단으로 정렬으로 이슈가 발생함.
+        </p>
+    </div>
+</body>
+</html>

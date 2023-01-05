@@ -1,0 +1,110 @@
+body{
+    color: #333;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+.title{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px 0;
+}
+.content{
+    margin-top: 20px;
+    line-height: 1.5;
+}
+.box_area{
+    width: 100%;
+    margin: 50px 0;
+    box-sizing: border-box;
+    &:nth-child(7){
+        margin-top: 50px;
+    }
+    .content_position{
+        margin-top: 250px;
+    }
+}
+.sub_title{
+    font-size: 20px;
+}
+
+.box_wrap{
+    background-color: #ccc;
+    margin-top: 10px;
+    width: 100%;height: auto;
+    .box{
+        &01{background-color: #cc9;}
+        &02{background-color: #cd9;}
+    }
+    &01{
+        // overflow: hidden;
+        &::after{
+            content: '';
+            display: block;clear: both;
+        }
+        .box{
+            float: left;
+            &01{
+                width: 200px;
+            }
+            &02{
+                width: calc(100% - 200px);
+            }
+        }
+    }
+    &02{
+        display: flex;justify-content: space-between;
+        .box{
+            &01{
+                width: 200px;
+            }
+            &02{
+                flex: 1;
+            }
+        }
+    }
+    &03{
+        display: grid;
+        grid-template-columns: 200px auto;
+    }
+    &04{
+        display: table;
+        .box{
+            display: table-cell;
+            &01{
+                width: 200px;
+            }
+        }
+    }
+    &05{
+        position: relative;
+        .box{
+            position: absolute;
+            top: 0;
+            height: auto;
+            &01{
+                left: 0;
+                width: 200px;
+            }
+            &02{
+                left: 200px;
+                width: calc(100% - 200px);
+            }
+        }
+    }
+    &06{
+        font-size: 0;
+        .box{
+            display: inline-block;
+            height: auto;
+            font-size: 14px;
+            &01{
+                width: 200px;
+            }
+            &02{
+                width: calc(100% - 200px);
+            }
+        }
+    }
+}

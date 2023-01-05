@@ -1,0 +1,564 @@
+.section_player{
+    padding: 86px 0 97px;
+    color: #fff;
+    background-color: #1b1d1f;
+    .title_area{
+        text-align: center;
+        .title{
+            font-size: 36px;
+            font-weight: bold;
+            line-height: 70px;
+            &::after{
+                content: '';
+                display: block;
+                width: 20px;height: 2px;
+                margin: 0 auto 20px;
+                background-color: #ff730a;
+            }
+        }
+        .time_start{
+            display: inline-block;
+            font-size: 14px;
+            .start{
+                color: #999;
+                .icon_time{
+                    display: inline-block;
+                    width: 16px;height: 16px;
+                    vertical-align: -3px;
+                    margin-right: 8px;
+                    background: url(../images/time.png) no-repeat center/cover;
+                }
+            }
+        }
+    }
+    .player_area{
+        margin-top: 54px;
+        border-top: 2px solid #4c4c4c;
+        table{
+            width: 100%;
+            thead{
+                border-bottom: 1px solid #333;
+                th{
+                    font-size: 14px;
+                    color: #999;
+                    line-height: 48px;
+                }
+            }
+            tbody{
+                .player{
+                    height: 80px;
+                    text-align: center;
+                    border-bottom: 1px solid #333;
+                    .player_name{
+                        display: flex;
+                        line-height: 80px;
+                        text-align: left;
+                        margin-top: 16px;
+                        img{
+                            width: 48px;height: 48px;
+                            margin-right: 30px;
+                            vertical-align: -15px;
+                        }
+                        span{
+                            line-height: 48px;
+                        }
+                    }
+                    &01{
+                        .player_name{
+                            span{
+                                line-height: 1.5;
+                            }
+                        }
+                    }
+                    .player_rank{
+                        color: #ff730a;
+                    }
+                    .player_point,
+                    .player_prize{
+                        span{
+                            display: block;
+                            margin-top: 10px;
+                            font-size: 14px;
+                            color: #999;
+                        }
+                    }
+                    &02{
+                        .player_score{
+                            color: #33a7ff;
+                        }
+                    }
+                    &03{
+                        .player_score{
+                            color: #fe3534;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.section_hole{
+    padding: 71px 0;
+    background-color: #fff;
+    .title_area{
+        display: flex;
+        align-items: center;
+        margin-bottom: 24px;
+        .title{
+            &::after{
+                content: '';
+                display: inline-block;
+                width: 1px;height: 12px;
+                margin: 0 11px 0 13px ;
+                background-color: #e7e7e7;
+            }
+        }
+        .desc{
+            margin-right: 9px;
+            font-size: 14px;
+            color: #ff730a;
+        }
+        .hole_info{
+            font-size: 14px;
+            color: #666;
+        }
+    }
+    .hole_area{
+        table{
+            font-size: 14px;
+            text-align: center;
+            border-top: 1px solid #1a1a1a;
+            tr{
+                color: #1a1a1a;
+                border-bottom: 1px solid #e5e5e5;
+            }
+            thead{
+                tr{
+                    height: 48px;
+                    th{
+                        background-color: #f7f7f7;
+                        border-right: 1px solid #e5e5e5;
+                        &:last-child{
+                            border-right: 0;
+                        }
+                        &.out,&.in{
+                            background-color: #ebebeb;
+                        }
+                        &.eleven_line{
+                            background-color: #fff2e6;
+                        }
+                        &.total{
+                            background-color: #d6d6d6;
+                        }
+                        &.font{
+                            color: #ff730a;
+                        }
+                    }
+                }
+            }
+            tbody{
+                tr{
+                    height: 56px;
+                    th,td{
+                        border-right: 1px solid #e5e5e5;
+                    }
+                    td{
+                        &:last-child{
+                            border-right: 0;
+                        }
+                    }
+                    th,.out,.in,.total{
+                        background-color: #fcfcfc;
+                    }
+                    .eleven_line{
+                        background-color: #fff2e6;
+                    }
+                    .bogey{
+                        color: #fff;
+                        background-color: #64b4fa;
+                    }
+                    .double{
+                        color: #fff;
+                        background-color: #5083eb;
+                    }
+                    .birdie{
+                        color: #fff;
+                        background-color: #fbb22c;
+                    }
+                    .eagle{
+                        color: #fff;
+                        background-color: #ff7c0a;
+                    }
+                }
+            }
+        }
+        .legend{
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 18px;
+            .legend_list{
+                .legend_item{
+                     margin-left: 16px;
+                }
+            }
+        }
+    }
+}
+
+.section_shot{
+    padding: 66px 0 84px;
+    background-color: #f7f7f7;
+}
+.shot_area{
+    margin-bottom: 47px;
+    .title{}
+    .hole_list{
+        display: table;
+        width: 100%;
+        height: 72px;
+        margin-top: 24px;
+        border: 1px solid #dbdbdb;
+        .hole_item{
+            display: table-cell;
+            width: calc(100%/18);height: 100%;
+            text-align: center;
+            line-height: 72px;
+            border-right: 1px solid #dbdbdb;
+            .hole_tab{
+                display: block;
+                width: 100%;height: 100%;
+                color: #666;
+                font-weight: bold;
+            }
+            &:last-child{
+                border: 0;
+            }
+            &.is_selected{
+                .hole_tab{
+                    position: relative;
+                    color: #ff730a;
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        top: -1px;left: -1px;
+                        display: inline-block;
+                        width: 70px;height: 72px;
+                        border: 1px solid #ff730a;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+.hole_panel{
+    display: none;
+    .title_area{
+        display: flex;
+        align-items: center;
+        margin-bottom: 24px;
+        .title{
+            font-size: 20px;
+            &::after{
+                content: '';
+                display: inline-block;
+                width: 1px;height: 12px;
+                margin: 0 12px 0 15px;
+                background-color: #c6c6c6;
+            }
+        }
+        .hole_info{
+            font-size: 14px;
+            color: #666;
+        }
+    }
+    
+    &.is_selected{
+        display: block;
+    }
+    .round_list{
+        display: flex;
+        width: 100%;height: 47px;
+        border-bottom: 1px solid #ff730a;
+        .round_item{
+            .round_tab{
+                display: block;
+                width: 211px;height: 47px;
+                line-height: 47px;
+                text-align: center;
+                font-weight: bold;
+                color: #666;
+                border: 1px solid #dbdbdb;
+                border-bottom: 0;
+                box-sizing: border-box;
+                &.is_selected{
+                        position: relative;
+                        background-color: #f7f7f7;
+                        color: #ff730a;
+                        border: 1px solid #ff730a;
+                        border-bottom: 0;
+                        &::after{
+                            content: '';
+                            position: absolute;
+                            left: 0;bottom: -1px;
+                            display: inline-block;
+                            width: 100%;height: 1px;
+                            background-color: #f7f7f7;
+                        }
+                }
+            }
+        }
+    }
+    .round_cont{
+        display: none;
+        height: 551px;
+        margin-top: 40px;
+        &.is_selected{
+            display: flex;
+        }
+        .group_field{
+            position: relative;
+            width: 360px;height: 100%;
+            margin-right: 50px;
+            .tool{
+                position: absolute;
+                display: none ;
+                width: 204px;min-height: 75px;
+                padding: 12px;
+                background-color: #fff;
+                box-sizing: border-box;
+                .image_wrap{
+                    width: 36px;height: 36px;
+                    margin-right: 7px;
+                    border: 2px solid #3942ec;
+                    border-radius: 50%;
+                }
+                .text_wrap{
+                    flex: 1 0 0;
+                    margin-right: 16px;
+                    font-size: 12px;
+                    color: #666;
+                    .player_name{
+                        font-size: 16px;
+                        font-weight: bold;
+                        color: #1a1a1a;
+                    }
+                    .shot{
+                        display: inline-block;
+                        margin-top: 4px;
+                        line-height: 16px;
+                        letter-spacing: -0.3px;
+                    }
+                }
+                .btn_close{
+                    display: inline-block;
+                    width: 18px;height: 18px;
+                    background: url(../images/close.png) no-repeat center/cover;
+                }
+                &::after{
+                    content: '';
+                    position: absolute;
+                    bottom: -9px;
+                    left: 24px;
+                    width: 0;
+                    height: 0;
+                    border-bottom: 9px solid #fff;
+                    border-left: 6px solid rgba(0,0,0,0);
+                    border-right: 6px solid rgba(0,0,0,0);
+                    z-index: 10;
+                    transform: rotate(180deg);
+                }
+                &.is_selected{
+                    display: flex;
+                }
+                &01{
+                    top: 75px;left:152px;
+                    .image_wrap{
+                        border: 2px solid #e4e212;
+                    }
+                }
+                &02{
+                    top: 105px;left:129px;
+                    .image_wrap{
+                        border: 2px solid #fe3534;
+                    }
+                }
+                &03{
+                    top: 90px;left:105px;
+                    .image_wrap{
+                        border: 2px solid #3942ec;
+                    }
+                }
+            }
+        }
+        .group_player{
+            position: relative;
+            flex: 1;height: 100%;
+        }
+        .player_list{
+            display: flex;
+            align-items: center;
+            margin-bottom: 34px;
+            .player_tab{
+                margin-right: 40px;
+                line-height: 52px;
+                .image_wrap{
+                    display: inline-block;
+                    width: 52px;height: 52px;
+                    margin-right: 10px;
+                    vertical-align: top;
+                    color: #666;
+                    border-radius: 50%;
+                    border: 2px solid #b2b2b2;
+                    box-sizing: border-box;
+                    filter: grayscale(100%);
+                }
+                &01{
+                    &.is_selected{
+                        color: #e4e212;
+                        font-weight: bold;
+                        .image_wrap{
+                            border: 2px solid #e4e212;
+                            filter: grayscale(0);
+                        }
+                    }
+                }
+                &02{
+                    &.is_selected{
+                        color: #fe3534;
+                        font-weight: bold;
+                        .image_wrap{
+                            border: 2px solid #fe3534;
+                            filter: grayscale(0);
+                        }
+                    }
+                }
+                &03{
+                    &.is_selected{
+                        color: #3942ec;
+                        font-weight: bold;
+                        .image_wrap{
+                            border: 2px solid #3942ec;
+                            filter: grayscale(0);
+                        }
+                    }
+                }
+            }
+        }
+        .player_info{
+            max-height: 121px;
+            overflow: auto;
+            font-size: 14px;
+            line-height: 24px;
+            color: #000005;
+        }
+    }
+    .player_hole{
+        display: flex;
+        margin-top: 20px;
+        
+        .hole_grade,
+        .hole_record{
+            width: 50%;
+            box-sizing: border-box;
+        }
+        .sub_title{
+            margin: 11px 0 0;
+            font-size: 16px;
+            color: #1a1a1a;
+        }
+        .hole_grade{
+            border-right: 1px solid #dbdbdb;
+            .grade_image{
+                width: 216px;height: 216px;
+                margin: 12px auto 29px;
+            }
+            .legend_list{
+                .legend_item{
+                    &+.legend_item{
+                        margin-left: 16px;
+                    }
+                    &:nth-child(7){
+                        margin-left: 0;
+                    }
+                    &:nth-child(n+7){
+                        margin-top: 4px;
+                    }
+                }
+                .color_box{
+                    display: inline-block;
+                    width: 13px;height: 13px;
+                    margin-right: 7px;
+                    vertical-align: -3px;
+                    &.holeinone{
+                        background-color: #913535;
+                    }
+                    &.albatross{
+                        background-color: #e62525;
+                    }
+                    &.eagle{
+                        background-color: #ff7c0a;
+                    }
+                    &.birdie{
+                        background-color: #f9b842 ;
+                    }
+                    &.par{
+                        background-color: #fff;
+                        border: 1px solid #ccc;
+                    }
+                    &.bogey{
+                        background-color: #7dc0fa;
+                    }
+                    &.double{
+                        background-color: #5083eb;
+                    }
+                    &.triple{
+                        background-color: #4744c4;
+                    }
+                }
+            }
+        }
+        .hole_record{
+            padding-left: 56px;
+            box-sizing: border-box;
+            .record_list{
+                margin-top: 54px;
+                font-size: 14px;
+                .record_item{
+                    display: flex;
+                    line-height: 30px;
+                    dt{
+                        width: 110px;
+                        margin-right: 25px;
+                        font-weight: bold;
+                        &::before{
+                            content: '';
+                            display: inline-block;
+                            width: 3px;height: 3px;
+                            border-radius: 50%;
+                            margin-right: 5px;
+                            vertical-align: 2px;
+                            background-color: #1a1a1a;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .link_info{
+        position: absolute;
+        top: 0;right: 0;
+        display: block;
+        font-size: 12px;
+        color: #1a1a1a;
+        &::after{
+            content: '';
+            display: inline-block;
+            width: 10px;height: 10px;
+            margin-left: 5px;
+            vertical-align: -1px;
+            background: url(../images/arrow.png) no-repeat center/5px 9px;
+        }
+    }
+}

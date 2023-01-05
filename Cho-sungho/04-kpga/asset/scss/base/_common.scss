@@ -1,0 +1,54 @@
+.inner{
+    width: 1280px;
+    min-width: 1280px;
+    margin: 0 auto;
+}
+.title{
+    font-weight: bold;
+}
+img{
+    width: 100%;height: 100%;
+    object-fit: cover;
+}
+.section_hole .title,
+.section_shot .title{
+    font-size: 24px;
+    color: #1a1a1a;
+}
+
+.legend_list{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+    .color_box{
+        display: inline-block;
+        width: 13px;height: 13px;
+        margin-right: 7px;
+        vertical-align: -3px;
+        &.holeinone{
+            background-color: #913535;
+        }
+        &.albatross{
+            background-color: #e62525;
+        }
+        &.eagle{
+            background-color: #ff7c0a;
+        }
+        &.birdie{
+            background-color: #f9b842 ;
+        }
+        &.par{
+            background-color: #fff;
+            border: 1px solid #ccc;
+        }
+        &.bogey{
+            background-color: #7dc0fa;
+        }
+        &.double{
+            background-color: #5083eb;
+        }
+        &.triple{
+            background-color: #4744c4;
+        }
+    }
+}
