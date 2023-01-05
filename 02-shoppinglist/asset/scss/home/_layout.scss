@@ -1,0 +1,129 @@
+body{
+    background-color: #f4f4f4;color: #000;
+    font-size: 12px;
+    font-family: 'Gowun Dodum', sans-serif;
+}
+img{width: 100%;object-fit: cover;}
+.sc_shop{
+    min-width: 940px;
+    width: 940px;
+    margin: 66px auto 30px;
+}
+.shop_area{
+    position: relative;
+    width: 100%;
+}
+.shop_title_list{
+    display: flex;justify-content: start;
+    width: 100%;
+    border-bottom: 2px solid #000;
+    .shop_title_item{
+        width: 188px;height: 48px;
+        
+        &.on{
+            .shop_title{
+                background-color: #f4f4f4;
+                border: 2px solid #333;
+                border-bottom: 0;
+                font-weight: bold;
+            }
+        }
+        .shop_title{
+            display: block;
+            font-size: 13px; 
+            line-height: 48px;
+            text-align: center;
+            border: 1px solid #c3c3c3;
+            border-bottom: 0;
+        }
+    }
+}
+.shop_goods_list{
+    display: flex;justify-content: space-between;
+    flex-wrap: wrap;
+    width: 940px;
+    margin-top: 20px;
+    .shop_goods_item{
+        position: relative;
+        width: 220px;
+        margin-bottom: 56px;
+        &:nth-child(7){
+            .shop_goods_wrap{
+                .group_text{
+                    .price_area{
+                        margin-top: 27px;
+                    }
+                }
+            }
+        }
+        &:nth-child(9){
+            .shop_goods_wrap{
+                .group_text{
+                    .price_area{
+                        margin-top: 27px;
+                    }
+                }
+            }
+        }
+        .btn_heart{
+            position: absolute;
+            right: 0;bottom: 47px;
+            z-index: 22;
+            // cursor: pointer;
+            display: inline-block;
+            width: 28px;height: 33px;
+            background-color: #ccc;
+            background: url(/Cho-sungho/02-shoppinglist/asset/images/heart.png) no-repeat center/26px 24px;
+        }
+    }
+    .shop_goods_wrap{
+        display: block;
+        width: 100%;
+        .group_image{
+            width: 100%;
+            margin-bottom: 14px; 
+        }
+        .group_text{
+            display: flex;flex-direction: column;
+            .top_area{
+                margin-bottom: 8px;
+                .season_badge{
+                    display: inline-block;
+                    width: 31px;height: 14px;
+                    background: url(/Cho-sungho/02-shoppinglist/asset/images/season.jpg) no-repeat center/cover;
+                    vertical-align: -2px;
+                    margin-right: 6px;
+                }
+            }
+            .goods_title{
+                width: 170px;height: 36px;
+                line-height: 18px;
+                @include elip(2,18);
+                // margin-bottom: 5px;
+            }
+            .small_msg{
+                line-height: 18px;
+                margin-bottom: 9px;
+                color: #666;
+            }
+            .price_area{
+                .dc_price{
+                    color: #333;
+                }
+                .og_price{
+                    text-decoration: line-through;
+                    color: #999;
+                }
+                .discount{
+                    color: #00bac1;
+                }
+            }
+        }
+    }
+}
+
+
+.btn_more{
+    position: absolute;
+    right: 0;top: 0;
+}
